@@ -1,13 +1,13 @@
 // No cambies los nombres de las funciones.
 
 function crearGato(nombre, edad) {
-  const me={
+  const gat={
     nombre: nombre,
     edad: edad,
   }
- const meow = Object.create(me);
- me.meow = function() {return 'Meow!'};
-   return me
+ const meow = Object.create(gat);
+ gat.meow = function() {return 'Meow!'};
+   return gat
   };
 
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
@@ -88,11 +88,12 @@ function tienePropiedad(objeto, propiedad) {
   else {
     return false
   }
+}
   // Devuelve "true" si el objeto tiene el valor del argumento "propiedad"
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-}
+
 
 function verificarPassword(usuario, password) {
   if (usuario['password']==password) {
@@ -154,12 +155,9 @@ function sumarLikesDeUsuario(usuario) {
   // Tu código:
 
 function agregarMetodoCalculoDescuento(producto) {
-
     producto.calcularPrecioDescuento= function(){return this.precio - (this.precio * this.porcentajeDeDescuento)}
-
-return producto 
+return producto
 }
-
 
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
   // Este método debe multiplicar el "precio" del "producto" ("producto.precio" o "producto[precio]") y "porcentajeDeDescuento" para obtener el descuento
