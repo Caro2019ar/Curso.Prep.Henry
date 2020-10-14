@@ -1,6 +1,15 @@
 // No cambies los nombres de las funciones.
 
 function crearUsuario() {
+ function Usuario (opciones){     //não sabia dessa opção de colocar dentro dos parenteses//
+    this.usuario = opciones.usuario,
+    this.nombre = opciones.nombre,
+    this.email = opciones.email,
+    this.password = opciones.password
+  }
+  Usuario.prototype.saludar = function() {return 'Hola, mi nombre es '+ this.nombre;};
+  return Usuario;
+}
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
   // En el `contructor`, define el usuario, el nombre, el email y la contraseña
@@ -8,10 +17,12 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
+ 
 
-}
-
+ 
 function agregarMetodoPrototype(Constructor) {
+  Constructor.prototype.saludar = function () {return "Hello World!"};
+  return Constructor
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
