@@ -1,13 +1,13 @@
 // No cambies los nombres de las funciones.
 
 function crearGato(nombre, edad) {
-  const gat={
+  const me={
     nombre: nombre,
     edad: edad,
   }
- const meow = Object.create(gat);
- gat.meow = function() {return 'Meow!'};
-   return gat
+ const meow = Object.create(me);
+ me.meow = function() {return 'Meow!'};
+   return me
   };
 
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
