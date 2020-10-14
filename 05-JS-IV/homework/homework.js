@@ -157,9 +157,7 @@ function sumarLikesDeUsuario(usuario) {
   // Tu código:
 
 function agregarMetodoCalculoDescuento(producto) {
-  //var producto = {
-    //precio: null,
-    //porcentajeDeDescuento: null,
+
     producto.calcularPrecioDescuento= function(){return this.precio - (this.precio * this.porcentajeDeDescuento)}
 
 return producto 
