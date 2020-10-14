@@ -10,9 +10,6 @@ function crearGato(nombre, edad) {
    return me
   };
 
-// OK no npm
-
-
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
   // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el argumento "edad"
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
@@ -22,7 +19,7 @@ function crearGato(nombre, edad) {
 
 
 function agregarPropiedad(objeto, property) {
-  objeto[property]=null; //por que ['property'] não funciona??
+  objeto[property]=null; 
   return objeto;
 }
 
@@ -85,7 +82,7 @@ function tieneEmail(usuario) {
 
 
 function tienePropiedad(objeto, propiedad) {
-  if (objeto[propiedad]) { // não colocar aspas: ['propiedad']
+  if (objeto[propiedad]) { 
     return true
   }
   else {
@@ -120,7 +117,7 @@ function actualizarPassword(usuario, nuevaPassword) {
 
 
 function agregarAmigo(usuario, nuevoAmigo) {
-  usuario['amigos'].push(nuevoAmigo); //se usar sem aspas [amigos] não funciona!
+  usuario['amigos'].push(nuevoAmigo);
  return usuario;
   // "usuario" tiene una propiedad llamada "amigos" que es un array
   // Agrega "nuevoAmigo" al final de ese array
@@ -131,7 +128,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
 function pasarUsuarioAPremium(usuarios) {
   
   for (let i=0;i<usuarios.length;i++)
-  {usuarios[i].esPremium=true;} //não precisa usar 'usuario'
+  {usuarios[i].esPremium=true;} 
   return usuarios
   }
 
@@ -144,7 +141,7 @@ function pasarUsuarioAPremium(usuarios) {
 
 function sumarLikesDeUsuario(usuario) {
   var suma =0
-  for (let i=0;i<usuario.posts.length;i++) // pode acumular Obj.Obj.Prop !!
+  for (let i=0;i<usuario.posts.length;i++) 
     {suma = suma + usuario.posts[i].likes}
 
   return suma
